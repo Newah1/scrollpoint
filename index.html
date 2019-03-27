@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Splitpoint Example</title>
+    <style>
+        .white, .black{
+            width:100%;
+            height:100vh;
+
+        }
+        .emoji{
+            position: fixed;
+            top:50px;
+            left:100px;
+            width:150px;
+            height:150px;
+            background-image:url("demo/sad.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .emoji.splitpoint{
+            background-image: url("demo/smile.png");
+        }
+        .white{
+            background-color:white;
+            text-align: center;
+
+        }
+        .black{
+            background-color:black;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="emoji"></div>
+<div class="white">
+    <h1>Scrollpoint Demo</h1>
+</div>
+<div class="black"></div>
+
+<script src="dist/splitpoint.js"></script>
+<script>
+    new Splitpoint(document.querySelector(".emoji"), {
+        absolute: true,
+        split_element: document.querySelector(".black"),
+        side: "top"
+    })
+</script>
+</body>
+</html>
