@@ -1,4 +1,6 @@
-**SPLITPOINT.JS**
+## SPLITPOINT.JS
+
+**[DEMO](https://newah1.github.io/splitpoint/)**
 
 splitpoint is a small script designed to allow you to split an element on any given Y coordinate in your document (as defined by a DOM element).
 
